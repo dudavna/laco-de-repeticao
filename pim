@@ -1,0 +1,21 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Ricardo
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Maria Eduarda Viana
+// Data atual  : 18/03/2024
+Var
+// Seção de Declarações das variáveis
+ x: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+Para x de 1 ate 40 FACA
+  SE(x % 4 = 0) ENTAO
+    ESCREVAL("PIN")
+  SENAO
+    ESCREVAL(x)
+  FIMSE
+FIMPARA
+
+Fimalgoritmo
