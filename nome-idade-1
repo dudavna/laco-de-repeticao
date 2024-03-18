@@ -1,0 +1,23 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Maria Eduarda Viana
+// Data atual  : 18/03/2024
+Var
+// Seção de Declarações das variáveis 
+x:inteiro
+nome:caractere
+idade:caractere
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+para x de 1 ate 5 faca
+     escreval(x, " qual o seu nome?:")
+     leia(nome)
+     escreval(x, " qual a sua idade?:")
+     leia(idade)
+     escreval("Nome = ", nome, ", idade = " , idade,  " anos")
+fimpara
+
+Fimalgoritmo
