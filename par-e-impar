@@ -1,0 +1,49 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Maria Eduarda Viana
+// Data atual  : 25/03/2024
+Var
+// Seção de Declarações das variáveis 
+continuar:caractere
+x:inteiro
+total:inteiro
+par:inteiro
+impar:inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+continuar <- "s"
+x <- 1
+par <- 0
+impar <- 0
+
+ENQUANTO (continuar = "s") ou (continuar = "S") FACA
+ ESCREVAL ("Digite o numero:")
+ LEIA (x)
+ 
+SE (x % 2 = 0) ENTAO
+ ESCREVAL ("- PAR")
+ par <- + 1
+SENAO
+ ESCREVAL ("- IMPAR")
+ impar <- impar + 1
+ FIMSE
+ ESCREVAL ("")
+ 
+ ESCREVAL("Deseja continuar [s/n]?")
+ LEIA (continuar)
+ 
+ SE continuar = "S" ENTAO
+ x <- x + 1
+ 
+ FIMSE
+ 
+ FIMENQUANTO
+
+ ESCREVAL ("Escreva o numero de pares:", par)
+ ESCREVAL ("Escreva o numero de impares:", impar)
+ 
+
+Fimalgoritmo
