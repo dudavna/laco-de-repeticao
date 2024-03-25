@@ -1,0 +1,55 @@
+algoritmo "seAmnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Maria Eduarda Viana
+// Data atual  : 25/03/2024
+Var
+// Seção de Declarações das variáveis 
+impar: vetor [1..10] de inteiro
+indice_impar: inteiro
+
+par: vetor [1..10] de inteiro
+indice_par: inteiro
+
+quantidade: inteiro
+numero: inteiro
+x: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+ ESCREVAL ("Quantos numeros?")
+ LEIA (quantidade)
+ 
+ indice_par <- 0
+ indice_impar <- 0
+ 
+      PARA x DE 1 ATE quantidade FACA
+      ESCREVA("Qual numero?")
+      LEIA (numero)
+      SE (numero % 2 = 0 ) ENTAO
+          indice_par <- indice_par + 1
+          par[indice_par] <- numero
+      SENAO
+          indice_impar <- indice_impar + 1
+          impar[indice_impar] <- numero
+      FIMSE
+ FIMPARA
+ 
+ ESCREVAL("")
+ ESCREVAL("")
+ 
+ ESCREVAL("PAR")
+ PARA X DE 1 ATE indice_par FACA
+      ESCREVAL(X, ": ", par[x])
+ FIMPARA
+ 
+ 
+ ESCREVAL("")
+ 
+ ESCREVAL("IMPAR")
+ PARA X DE 1 ATE indice_impar FACA
+      ESCREVAL(X, ": ", impar[x])
+ FIMPARA
+ 
+
+Fimalgoritmo
